@@ -9,7 +9,7 @@ protoc -I=. --python_out=. ./UA.proto
 
 ## Run
 1. Frontend Server
-- Modify `/frontEndServer/views.py` `AMAZON_HOST` to your hostname
+- Modify `/frontend-docker/web-app/frontEndServer/views.py` `AMAZON_HOST` to your hostname
 - Run Frontend Server with 
     ```
     cd erss-final-yy252-ym154/frontend-docker/
