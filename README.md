@@ -9,7 +9,7 @@ protoc -I=. --python_out=. ./UA.proto
 
 ## Run
 1. Frontend Server
-- Modify `/frontEndServer/views.py` AMAZON_HOST to your hostname
+- Modify `/frontEndServer/views.py` `AMAZON_HOST` to your hostname
 - Run Frontend Server with 
     ```
     cd erss-final-yy252-ym154/frontend-docker/
@@ -20,8 +20,8 @@ protoc -I=. --python_out=. ./UA.proto
 - `UPS_PORT` (default `5555`)
 - Run Amazon Server with 
     ```
-    cd erss-final-yy252-ym154/server-docker/server
-    python3 run_server.py
+    cd erss-final-yy252-ym154/server-docker/
+    sudo docker-compose up
     ```
 
 ## Debug helper
