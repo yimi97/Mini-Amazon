@@ -16,7 +16,8 @@ protoc -I=. --python_out=. ./UA.proto
     sudo docker-compose up
     ```
 2. Amazon Server
-- Modify `/server-docker/server/run_server.py` WORLD_HOST to world hostname
+- Modify `/server-docker/server/run_server.py` `WORLD_HOST` to world hostname
+- `UPS_PORT` (default `5555`)
 - Run Amazon Server with 
     ```
     cd erss-final-yy252-ym154/server-docker/server
