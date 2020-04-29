@@ -1,13 +1,13 @@
 ## Prerequisites
-```
-cd Mini-Amazon/server-docker/server
-pip3 install protobuf
-sudo apt install protobuf-compiler
-protoc -I=. --python_out=. ./world_amazon.proto
-protoc -I=. --python_out=. ./UA.proto
-```
+1. [UPS](https://github.com/dentiny/UPS)
+2. [World Simulator](https://github.com/yunjingliu96/world_simulator_exec)
 
-## Run
+
+## Instruction
+You should first run World server and then Amazon servers and UPS server. 
+
+
+## Run Amazon Servers
 1. Frontend Server
 - Modify `/frontend-docker/web-app/frontEndServer/views.py` `AMAZON_HOST` to your hostname
 - Run Frontend Server with 
@@ -23,3 +23,4 @@ protoc -I=. --python_out=. ./UA.proto
     cd Mini-Amazon/server-docker/
     sudo docker-compose up
     ```
+  
